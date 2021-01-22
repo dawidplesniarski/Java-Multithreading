@@ -19,7 +19,20 @@ public class Philosopher implements Runnable {
 
     @Override
     public void run() {
-
+        try {
+            while (!isFull) {
+                thinking();
+                if (leftChopstick.pickUp(this)) {
+                    if(rightChopstick.pickUp(this)) {
+                        eating();
+                        rightChopstick.putDown(this);
+                    }
+                    leftChopstick.putDown(this);
+                }
+            }
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     private void thinking() throws InterruptedException {
