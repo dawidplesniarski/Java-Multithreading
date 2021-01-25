@@ -4,6 +4,8 @@ The dining philosophers problem states that there are 5 philosophers sharing a c
 
 The dining philosopher is a classic synchronization problem as it demonstrates a large class of concurrency control problems.</br>
 
+<p align = "center">
 ![alt text](https://user-images.githubusercontent.com/49324419/105504578-38238a80-5cc8-11eb-8b06-61994ac0cdcd.png) <br />
+</p>
 
 
